@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Cyfrowy zegar</title>
+       <style>
+        #clock {
+            font: bold 24px sans-serif;
+            background: #ddf;
+            padding: 15px;
+            border: solid black 2px;
+            border-radius: 10px;
+        }
+        </style>
+        <script async src="clock.js"></script>
+    </head>
+    <body>
+            <h1>Cyfrowy zegar</h1>
+            <span id="clock"></span>
+            <h3 id="tekst"></h3>
+
+            <button name="sdfsd" title="Mariusz" id="btn">P<b>dfgdfg</b>rzycisk</button>
+            <script>
+                function importScript(url) {
+                    return new Promise((resolve, reject) => {
+                        let s = document.createElement("script");
+                        s.onload = () => { resolve(); }; 
+                    });
+                };
+
+                function fn() {
+                    alert(this.title);
+
+                    this.title = "Barvbara";
+                }
+
+                let btn = document.getElementById("btn");
+                
+                btn.addEventListener("click", fn);
+
+                let b = document.createElement("b");
+                b.append("SDFSFSDF");
+                btn.innerHTML = b.outerHTML;
+
+                btn.classList.add("klasa");
+
+             </script>
+    </body>
+</html>
